@@ -36,15 +36,24 @@
       .tooltip img {
         display: none;
         position: absolute;
-        bottom: 100%;
-        left: 0;
         width: var(--tooltip-img-width, 300px);
         height: auto;
         border: 1px solid #ccc;
         background: #fff;
         padding: 5px;
         z-index: 10;
+
+        /* Default position above */
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
       }
+
+      .tooltip[data-position='below'] img {
+        bottom: auto;
+        top: 100%;
+      }
+
       .tooltip:hover img {
         display: block;
       }
@@ -83,8 +92,19 @@
     <details>
       <summary>Lecture 1: IT and PP Fossa</summary>
 
-      <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Maxillary Artery<br /><br />
+      <div
+        style="
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          --tooltip-img-width: 400px;
+        "
+      >
+        <span class="tooltip" data-position="below">
+          Maxillary Artery
+          <img src="./ITFossa/ITMaxPic.png" alt="Maxillary Artery" />
+        </span>
+        <br /><br />
       </div>
 
       <table>
@@ -116,13 +136,29 @@
             <td>Buccal fat pad, oral mucosa, buccinator muscle</td>
           </tr>
           <tr>
-            <td>Posterior superior alveolar artery</td>
+            <td>
+              <span class="tooltip">
+                Posterior Superior Alveolar Artery
+                <img
+                  src="./ITFossa/ITMaxArt2.png"
+                  alt="Posterior Superior Alveolar Artery"
+                />
+              </span>
+            </td>
             <td>Infratemporal Fossa</td>
             <td>Anterior to lateral pterygoid → alveolar foramen</td>
             <td>Maxillary sinus, upper premolars/molars, gingivae</td>
           </tr>
           <tr>
-            <td>Middle meningeal artery</td>
+            <td>
+              <span class="tooltip">
+                Middle Meningeal Artery
+                <img
+                  src="./ITFossa/ITMaxArt2.png"
+                  alt="Middle Meningeal Artery"
+                />
+              </span>
+            </td>
             <td>Infratemporal Fossa</td>
             <td>
               Medial to mandibular neck → foramen spinosum → middle cranial
@@ -131,7 +167,15 @@
             <td>Dura mater (lateral wall), calvaria</td>
           </tr>
           <tr>
-            <td>Inferior alveolar artery</td>
+            <td>
+              <span class="tooltip">
+                Inferior Alveolar Artery
+                <img
+                  src="./ITFossa/ITMaxArt2.png"
+                  alt="Inferior Alveolar Artery"
+                />
+              </span>
+            </td>
             <td>Infratemporal Fossa</td>
             <td>Descends with inferior alveolar nerve → mandibular canal</td>
             <td>Mandibular teeth, mandible, mylohyoid, chin skin</td>
@@ -204,8 +248,21 @@
         </tbody>
       </table>
 
-      <header style="text-align: center; font-size: 24px; font-weight: bold">
-        IT Fossa Maxillary Artery
+      <header
+        style="
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          --tooltip-img-width: 400px;
+        "
+      >
+        <span class="tooltip">
+          Infratemporal Fossa Maxillary Artery
+          <img
+            src="./ITFossa/ITMaxPic.png"
+            alt="Infratemporal Fossa Maxillary Artery"
+          />
+        </span>
       </header>
       <div class="blur-section">
         <li>
@@ -228,7 +285,13 @@
       <br />
 
       <header style="text-align: center; font-size: 24px; font-weight: bold">
-        PP Fossa Maxillary Artery
+        <span class="tooltip">
+          Pterygopalatine Fossa Maxillary Artery
+          <img
+            src="./PPFossa/PPMax.png"
+            alt="Pterygopalatine Fossa Maxillary Artery"
+          />
+        </span>
       </header>
       <div class="blur-section">
         <li>
@@ -250,7 +313,11 @@
       <br />
 
       <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Mandibular Nerve (CN V3)<br /><br />
+        <span class="tooltip">
+          Mandibular Nerve (CN V3)
+          <img src="./ITFossa/ITMan.png" alt="Mandibular Nerve (CN V3)" />
+        </span>
+        <br /><br />
       </div>
 
       <table>
@@ -279,7 +346,15 @@
             <td>Mandibular teeth, chin skin, lower lip, gingivae</td>
           </tr>
           <tr>
-            <td>Auriculotemporal nerve</td>
+            <td>
+              <span class="tooltip">
+                Auriculotemporal nerve
+                <img
+                  src="./ITFossa/ITManNerv.png"
+                  alt="Auriculotemporal nerve"
+                />
+              </span>
+            </td>
             <td>
               <li>
                 Branches posteriorly deep to lateral pterygoid → encircles
@@ -304,12 +379,22 @@
             </td>
           </tr>
           <tr>
-            <td>Buccal nerve</td>
+            <td>
+              <span class="tooltip">
+                Buccal nerve
+                <img src="./ITFossa/ITBucc.png" alt="Buccal nerve" />
+              </span>
+            </td>
             <td>Emerges from lateral pterygoid → pierces buccinator</td>
             <td>Cheek mucosa and skin</td>
           </tr>
           <tr>
-            <td>Masseteric nerve</td>
+            <td>
+              <span class="tooltip"
+                >Masseteric nerve
+                <img src="./ITFossa/ITMess.png" alt="Masseteric nerve"
+              /></span>
+            </td>
             <td>Crosses mandibular notch posteriorly</td>
             <td>Motor to masseter, sensory to TMJ</td>
           </tr>
@@ -322,7 +407,14 @@
       </table>
 
       <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Pterygoid Venous Plexus<br /><br />
+        <span class="tooltip">
+          Pterygoid Venous Plexus
+          <img
+            src="./ITFossa/PterygoidPlex.png"
+            alt="Pterygoid Venous Plexus"
+          />
+        </span>
+        <br /><br />
       </div>
 
       <table>
@@ -345,7 +437,14 @@
       </table>
 
       <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Infratemporal Fossa Boundaries<br /><br />
+        <span class="tooltip">
+          Infratemporal Fossa Boundaries
+          <img
+            src="./ITFossa/ITBoundaries.png"
+            alt="Infratemporal Fossa Boundaries"
+          />
+        </span>
+        <br /><br />
       </div>
 
       <table>
@@ -386,7 +485,14 @@
       </table>
 
       <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Infratemporal Fossa Boundaries<br /><br />
+        <span class="tooltip">
+          Pterygopalatine Fossa Boundaries
+          <img
+            src="./PPFossa/PPBound.png"
+            alt="Pterygopalatine Fossa Boundaries"
+          />
+        </span>
+        <br /><br />
       </div>
 
       <table>
@@ -429,8 +535,21 @@
         </tbody>
       </table>
 
-      <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Communications (Opening and Passages)<br /><br />
+      <div
+        style="
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          --tooltip-img-width: 400px;
+        "
+      >
+        <span class="tooltip">
+          Communications (Opening and Passages)<br /><br />
+          <img
+            src="./PPFossa/PPComm.png"
+            alt="Pterygopalatine Fossa Communications"
+          />
+        </span>
       </div>
       <table>
         <thead>
@@ -489,8 +608,22 @@
         </tbody>
       </table>
 
-      <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Maxillary Nerve (CN V2) Branches<br /><br />
+      <div
+        style="
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          --tooltip-img-width: 500px;
+        "
+      >
+        <span class="tooltip">
+          Maxillary Nerve (CN V2) Branches
+          <img
+            src="./PPFossa/PPNerve.png"
+            alt="Maxillary Nerve (CN V2) Branches"
+          />
+        </span>
+        <br /><br />
       </div>
 
       <table>
