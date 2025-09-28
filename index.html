@@ -38,16 +38,13 @@
         position: absolute;
         bottom: 100%;
         left: 0;
-        width: var(--tooltip-img-width, 300px); /* default 300px */
-        max-width: none !important;
-        max-height: none !important;
+        width: var(--tooltip-img-width, 300px);
         height: auto;
         border: 1px solid #ccc;
         background: #fff;
         padding: 5px;
         z-index: 10;
       }
-
       .tooltip:hover img {
         display: block;
       }
@@ -57,10 +54,23 @@
         transition: filter 0.3s ease;
       }
 
-      /* Make cursor pointer for clickable cells and li */
       table td:not(:first-child),
       table td li {
         cursor: pointer;
+      }
+
+      summary {
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 16px 0;
+      }
+
+      details {
+        border: 2px solid #444;
+        border-radius: 8px;
+        padding: 10px;
+        background: #f9f9f9;
       }
     </style>
   </head>
@@ -70,121 +80,500 @@
       <button id="unblurAll">Unblur All</button>
     </div>
 
-    <div style="text-align: center; font-size: 24px; font-weight: bold">
-      Maxillary Artery<br /><br />
-    </div>
+    <details>
+      <summary>Lecture 1: IT and PP Fossa</summary>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Pathway</th>
-          <th>Provides</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Masseteric artery</td>
-          <td>Through mandibular notch → deep surface of masseter</td>
-          <td>Masseter muscle</td>
-        </tr>
-        <tr>
-          <td>Deep temporal arteries</td>
-          <td>Between temporalis & pericranium → pierces temporalis</td>
-          <td>Temporalis muscle</td>
-        </tr>
-        <tr>
-          <td>Buccal artery</td>
-          <td>Anterior & inferior alongside buccal nerve</td>
-          <td>Buccal fat pad, oral mucosa, buccinator muscle</td>
-        </tr>
-        <tr>
-          <td>Posterior superior alveolar artery</td>
-          <td>Anterior to lateral pterygoid → alveolar foramen</td>
-          <td>Maxillary sinus, upper premolars/molars, gingivae</td>
-        </tr>
-        <tr>
-          <td>Middle meningeal artery</td>
-          <td>
-            Medial to mandibular neck → foramen spinosum → middle cranial fossa
-          </td>
-          <td>Dura mater (lateral wall), calvaria</td>
-        </tr>
-        <tr>
-          <td>Inferior alveolar artery</td>
-          <td>Descends with inferior alveolar nerve → mandibular canal</td>
-          <td>Mandibular teeth, mandible, mylohyoid, chin skin</td>
-        </tr>
-      </tbody>
-    </table>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Maxillary Artery<br /><br />
+      </div>
 
-    <div style="text-align: center; font-size: 24px; font-weight: bold">
-      Mandibular Nerve (CN V3)<br /><br />
-    </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Fossa</th>
+            <th>Pathway</th>
+            <th>Provides</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Masseteric artery</td>
+            <td>Infratemporal Fossa</td>
+            <td>Through mandibular notch → deep surface of masseter</td>
+            <td>Masseter muscle</td>
+          </tr>
+          <tr>
+            <td>Deep temporal arteries</td>
+            <td>Infratemporal Fossa</td>
+            <td>Between temporalis & pericranium → pierces temporalis</td>
+            <td>Temporalis muscle</td>
+          </tr>
+          <tr>
+            <td>Buccal artery</td>
+            <td>Infratemporal Fossa</td>
+            <td>Anterior & inferior alongside buccal nerve</td>
+            <td>Buccal fat pad, oral mucosa, buccinator muscle</td>
+          </tr>
+          <tr>
+            <td>Posterior superior alveolar artery</td>
+            <td>Infratemporal Fossa</td>
+            <td>Anterior to lateral pterygoid → alveolar foramen</td>
+            <td>Maxillary sinus, upper premolars/molars, gingivae</td>
+          </tr>
+          <tr>
+            <td>Middle meningeal artery</td>
+            <td>Infratemporal Fossa</td>
+            <td>
+              Medial to mandibular neck → foramen spinosum → middle cranial
+              fossa
+            </td>
+            <td>Dura mater (lateral wall), calvaria</td>
+          </tr>
+          <tr>
+            <td>Inferior alveolar artery</td>
+            <td>Infratemporal Fossa</td>
+            <td>Descends with inferior alveolar nerve → mandibular canal</td>
+            <td>Mandibular teeth, mandible, mylohyoid, chin skin</td>
+          </tr>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Pathway</th>
-          <th>Provides</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Inferior alveolar nerve</td>
+          <tr>
+            <td>Descending palatine artery</td>
+            <td>Pterygopalatine Fossa</td>
+            <td>
+              Through palatine canal → divides into greater and lesser palatine
+              arteries
+            </td>
+            <td>
+              <li>Soft Palate</li>
+              <li>Hard Palate</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Posterior superior alveolar artery</td>
+            <td>Pterygopalatine Fossa</td>
+            <td>Exits via pterygomaxillary fissure → alveolar foramen</td>
+            <td>
+              <li>supplies maxillary sinus</li>
+              <li>Upper Premolars</li>
+              <li>Upper Molars</li>
+              <li>Gingivae</li>
+            </td>
+          </tr>
+          <td>Pharyngeal Artery</td>
+          <td>Pterygopalatine Fossa</td>
+          <td>-</td>
           <td>
-            <li>
-              Travels inferiorly deep to lateral pterygoid → mandibular foramen
-              → mandibular canal → inferior dental plexus (supplies mandibular
-              teeth). Gives off nerve to mylohyoid before entering foramen
-            </li>
-            <li>
-              Mental nerve branch exits mental foramen to supply mucous membrane
-              of lower lip, chin, gingivae of mandibular incisors.
-            </li>
+            <li>Roof of nasal cavity</li>
+            <li>Sphenoidal sinus</li>
+            <li>Pharynx</li>
+            <li>Pharyngotympanic tube</li>
           </td>
-          <td>Mandibular teeth, chin skin, lower lip, gingivae</td>
-        </tr>
-        <tr>
-          <td>Auriculotemporal nerve</td>
+          <tr>
+            <td>Artery of the Pterygoid Canal</td>
+            <td>Pterygopalatine Fossa</td>
+            <td>-</td>
+            <td>
+              <li>Tympanic cavity</li>
+              <li>Pharynx</li>
+              <li>Pharyngotympanic tube</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Infraorbital artery</td>
+            <td>Pterygopalatine Fossa</td>
+            <td>
+              Enters inferior orbital fissure → infraorbital canal →
+              infraorbital foramen
+            </td>
+            <td>
+              <li>Supplies inferior oblique</li>
+              <li>Rectus Muscles</li>
+              <li>Lacrimal sac</li>
+              <li>Maxillary Teeth</li>
+              <li>Mucosa</li>
+              <li>Skin</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Sphenopalatine Artery</td>
+            <td>Pterygopalatine Fossa</td>
+            <td>Exits via sphenopalatine foramen → nasal cavity</td>
+            <td>Lateral nasal and septal branches supply nasal walls</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <header style="text-align: center; font-size: 24px; font-weight: bold">
+        IT Fossa Maxillary Artery
+      </header>
+      <div class="blur-section">
+        <li>
+          <b>Origin:</b>
+          <span class="blur-target">
+            Branches from the external carotid artery posterior to the neck of
+            the mandible</span
+          >
+        </li>
+        <li>
+          <b>Course:</b>
+          <span class="blur-target">
+            Travels deep or superficial to the lateral pterygoid muscle →
+            reaches pterygomaxillary fissure → continues as sphenopalatine
+            artery</span
+          >
+        </li>
+      </div>
+
+      <br />
+
+      <header style="text-align: center; font-size: 24px; font-weight: bold">
+        PP Fossa Maxillary Artery
+      </header>
+      <div class="blur-section">
+        <li>
+          <b>Origin:</b>
+          <span class="blur-target">
+            external carotid artery posterior to the lateral pterygoid
+            muscle</span
+          >
+        </li>
+        <li>
+          <b>Course:</b>
+          <span class="blur-target">
+            Passes anteriorly through the infratemporal fossa → pterygomaxillary
+            fissure → enters pterygopalatine fossa → terminates as the
+            sphenopalatine artery</span
+          >
+        </li>
+      </div>
+      <br />
+
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Mandibular Nerve (CN V3)<br /><br />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Pathway</th>
+            <th>Provides</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inferior alveolar nerve</td>
+            <td>
+              <li>
+                Travels inferiorly deep to lateral pterygoid → mandibular
+                foramen → mandibular canal → inferior dental plexus (supplies
+                mandibular teeth). Gives off nerve to mylohyoid before entering
+                foramen
+              </li>
+              <li>
+                Mental nerve branch exits mental foramen to supply mucous
+                membrane of lower lip, chin, gingivae of mandibular incisors.
+              </li>
+            </td>
+            <td>Mandibular teeth, chin skin, lower lip, gingivae</td>
+          </tr>
+          <tr>
+            <td>Auriculotemporal nerve</td>
+            <td>
+              <li>
+                Branches posteriorly deep to lateral pterygoid → encircles
+                middle meningeal artery → sensory to TMJ as it courses between
+                head of mandible and external acoustic meatus → Crosses
+                zygomatic process
+              </li>
+            </td>
+            <td>
+              TMJ, anterior auricle, temporal skin, carries postganglionic
+              parasympathetic fibers to parotid gland.
+            </td>
+          </tr>
+          <tr>
+            <td>Lingual nerve</td>
+            <td>
+              Anterior to inferior alveolar nerve → enters mouth between medial
+              pterygoid and mandible
+            </td>
+            <td>
+              Sensory anterior 2/3 tongue, floor of mouth, lingual gingivae
+            </td>
+          </tr>
+          <tr>
+            <td>Buccal nerve</td>
+            <td>Emerges from lateral pterygoid → pierces buccinator</td>
+            <td>Cheek mucosa and skin</td>
+          </tr>
+          <tr>
+            <td>Masseteric nerve</td>
+            <td>Crosses mandibular notch posteriorly</td>
+            <td>Motor to masseter, sensory to TMJ</td>
+          </tr>
+          <tr>
+            <td>Deep temporal nerves</td>
+            <td>Above lateral pterygoid → pierce temporalis</td>
+            <td>Motor to temporalis</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Pterygoid Venous Plexus<br /><br />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Pathway</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anterior</td>
+            <td>Facial vein via deep facial vein</td>
+          </tr>
+          <tr>
+            <td>Superiorly</td>
+            <td>Cavernous sinus via emissary veins</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Infratemporal Fossa Boundaries<br /><br />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Boundaries</th>
+            <th>Anatomical Structures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lateral</td>
+            <td>Ramus of the mandible</td>
+          </tr>
+          <tr>
+            <td>Medial</td>
+            <td>Lateral pterygoid plate</td>
+          </tr>
+          <tr>
+            <td>Anterior</td>
+            <td>Posterior surface of maxilla</td>
+          </tr>
+          <tr>
+            <td>Posterior</td>
+            <td>
+              <li>Tympanic Plate</li>
+              <li>Mastoid Process</li>
+              <li>Styloid Process</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Superior</td>
+            <td>Inferior surface of the greater wing of the sphenoid</td>
+          </tr>
+          <td>Inferior</td>
+          <td>Attachment of medial pterygoid muscle near mandibular angle</td>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Infratemporal Fossa Boundaries<br /><br />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Boundaries</th>
+            <th>Anatomical Structures</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anterior</td>
+            <td>Posterior aspect of the maxilla</td>
+          </tr>
+          <tr>
+            <td>Posterior</td>
+            <td>Pterygoid process of the sphenoid bone</td>
+          </tr>
+          <tr>
+            <td>Medial</td>
+            <td>Perpendicular plate of the palatine bone</td>
+          </tr>
+
+          <tr>
+            <td>Lateral</td>
+            <td>Opens into the pterygoidmaxillary fissure</td>
+          </tr>
+          <tr>
+            <td>Roof</td>
+            <td>
+              Infratemporal surface of the greater wing of the sphenoid
+              (incomplete due to inferior orbital fissure opening)
+            </td>
+          </tr>
+          <td>Floor</td>
           <td>
-            <li>
-              Branches posteriorly deep to lateral pterygoid → encircles middle
-              meningeal artery → sensory to TMJ as it courses between head of
-              mandible and external acoustic meatus → Crosses zygomatic process
-            </li>
+            Pyramidal process of the palatine bone (with opening into the
+            palatine canal)
           </td>
-          <td>
-            TMJ, anterior auricle, temporal skin, carries postganglionic
-            parasympathetic fibers to parotid gland.
-          </td>
-        </tr>
-        <tr>
-          <td>Lingual nerve</td>
-          <td>
-            Anterior to inferior alveolar nerve → enters mouth between medial
-            pterygoid and mandible
-          </td>
-          <td>Sensory anterior 2/3 tongue, floor of mouth, lingual gingivae</td>
-        </tr>
-        <tr>
-          <td>Buccal nerve</td>
-          <td>Emerges from lateral pterygoid → pierces buccinator</td>
-          <td>Cheek mucosa and skin</td>
-        </tr>
-        <tr>
-          <td>Masseteric nerve</td>
-          <td>Crosses mandibular notch posteriorly</td>
-          <td>Motor to masseter, sensory to TMJ</td>
-        </tr>
-        <tr>
-          <td>Deep temporal nerves</td>
-          <td>Above lateral pterygoid → pierce temporalis</td>
-          <td>Motor to temporalis</td>
-        </tr>
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Communications (Opening and Passages)<br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Neighboring Structures</th>
+            <th>Opening/Foramen/Fissure</th>
+            <th>Contents Transmitted</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Middle cranial fossa</td>
+            <td>Foramen Rotundum</td>
+            <td>Maxillary Nerve (CN V2)</td>
+          </tr>
+          <tr>
+            <td>Middle cranial Fossa</td>
+            <td>Pterygoid Canal</td>
+            <td>Nerve and artery of the pterygoid canal</td>
+          </tr>
+          <tr>
+            <td>Infratemporal fossa</td>
+            <td>Pterygomaxillary fissure</td>
+            <td>
+              <li>Posterior superior alveolar nerve</li>
+              <li>Maxillary Artery</li>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Nasal Cavity</td>
+            <td>Sphenopalatine foramen</td>
+            <td>
+              <li>Sphenopalatine artery and veins</li>
+              <li>Nasopalatine nerve</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Orbit</td>
+            <td>Inferior orbital fissure</td>
+            <td>
+              <li>Zygomatic branch of maxillary nerve</li>
+              <li>Infraorbital nerve, artery, veins</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Pharynx</td>
+            <td>Palatovaginal canal</td>
+            <td>Pharyngeal nerve and artery</td>
+          </tr>
+          <tr>
+            <td>Hard and Soft Palate</td>
+            <td>Palatine Canal</td>
+            <td>Nerves and vessels supplying the palate</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Maxillary Nerve (CN V2) Branches<br /><br />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Branch</th>
+            <th>Pathway and Supply</th>
+            <th>Provides</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zygomatic Nerve</td>
+            <td>Enters orbit via inferior orbital fissure</td>
+            <td>
+              <li>Zygomaticofacial (skin over zygomatic bone)</li>
+              <li>Zygomaticotemporal nerves (skin over temple)</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Posterior superior alveolar nerve</td>
+            <td>Travels with artery</td>
+            <td>
+              <li>Maxillary Sinus</li>
+              <li>Maxillary Sinus</li>
+              <li>Molars</li>
+              <li>Gingivae</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Infraorbital nerve</td>
+            <td>Follows infraorbital artery</td>
+            <td>
+              <li>Maxillary sinus mucosa</li>
+              <li>Premolars and anterior teeth</li>
+              <li>Skin & conjunctiva of inferior eyelid</li>
+              <li>Lateral nose</li>
+              <li>Anterior inferior septum</li>
+              <li>Upper lip</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Nasopalatine nerve</td>
+            <td>
+              Through sphenopalatine foramen → nasal cavity → across nasal
+              septum → incisive canal → hard palate mucosa and nasal septum
+            </td>
+            <td>
+              <li>Hard palate mucosa</li>
+              <li>Nasal septum</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Pharyngeal nerve</td>
+            <td>Passes posteriorly</td>
+            <td>Supplies nasopharynx mucosa</td>
+          </tr>
+          <tr>
+            <td>Greater palatine nerve</td>
+            <td>Follows descending palatine artery</td>
+            <td>
+              <li>Gingivae</li>
+              <li>Mucous membrane of hard palate</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Lesser palatine nerve</td>
+            <td>Follows lesser palatine artery</td>
+            <td>Supplies soft palate</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="blur-section">
+        <li>
+          <b>Origin:</b>
+          <span class="blur-target">
+            Originates in the middle cranial fossa → passes through foramen
+            rotundum → enters posterior wall of pterygopalatine fossa.</span
+          >
+        </li>
+      </div>
+    </details>
 
     <style>
       /* same as before */
@@ -213,13 +602,38 @@
         font-size: 16px;
         cursor: pointer;
       }
+      .blur-section li {
+        cursor: pointer;
+        margin-bottom: 6px;
+      }
+
+      /* Blur effect same as td */
+      .blur-section li.blurred {
+        filter: blur(10px);
+        transition: filter 0.3s ease;
+      }
+
+      /* Override for bold text so it always stays clear */
+      .blur-section li.blurred b {
+        filter: none !important;
+      }
+
+      .blur-section .blur-target {
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .blurred {
+        filter: blur(10px);
+        transition: filter 0.3s ease;
+      }
     </style>
 
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        // Select all td except the first column
+        // Select table cells + blur-target spans
         const blurCells = document.querySelectorAll(
-          'table td:not(:first-child)'
+          'table td:not(:first-child), .blur-section .blur-target'
         );
 
         blurCells.forEach((cell) => {
@@ -228,7 +642,7 @@
           });
         });
 
-        // Keyboard shortcuts
+        // Keyboard shortcut (space toggles all)
         document.addEventListener('keydown', (event) => {
           if (event.code === 'Space') {
             const allBlurred = Array.from(blurCells).every((cell) =>
@@ -239,11 +653,11 @@
             } else {
               blurCells.forEach((cell) => cell.classList.add('blurred'));
             }
-            event.preventDefault(); // Prevent page scrolling
+            event.preventDefault();
           }
         });
 
-        // Button functionality
+        // Buttons
         document.getElementById('blurAll').addEventListener('click', () => {
           blurCells.forEach((cell) => cell.classList.add('blurred'));
         });
