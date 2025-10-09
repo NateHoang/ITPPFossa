@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>IT and PP Fossa</title>
+    <title>Clinical Anatomy Exam 4</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 
     <style>
@@ -42,11 +42,13 @@
         background: #fff;
         padding: 5px;
         z-index: 10;
-
-        /* Default position above */
         bottom: 100%;
-        left: 50%;
+        left: 100%;
         transform: translateX(-50%);
+        max-width: 90vw; /* ✅ prevents image from exceeding viewport width */
+        max-height: 80vh; /* ✅ keeps image inside visible page vertically */
+        object-fit: contain;
+        box-sizing: border-box;
       }
 
       .tooltip[data-position='below'] img {
@@ -56,6 +58,9 @@
 
       .tooltip:hover img {
         display: block;
+        /* Reposition if too close to top or bottom of viewport */
+        top: auto;
+        bottom: auto;
       }
 
       .blurred {
@@ -1441,6 +1446,666 @@
           </tr>
         </tbody>
       </table>
+    </details>
+
+    <br />
+
+    <details>
+      <summary>Lecture 3: Ear</summary>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        External Ear and tympanic membrane
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Structure</th>
+            <th>Blood Supply</th>
+            <th>Innervation</th>
+            <th>Lymphatic Drainage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td>
+            <span class="tooltip"
+              >External ear & tympanic membrane
+              <img
+                src="./ear/eetm.png"
+                alt="External ear & tympanic membrane"
+              />
+            </span>
+          </td>
+          <td>Branches of the external artery</td>
+          <td>
+            <ul>
+              <li>
+                <b>Auricle Skin: </b> great auricular and auriculotemproal
+                nerves
+              </li>
+              <li>
+                <b>Skin in front of external acoustic meatus:</b>
+                auriculotemporal nerve
+              </li>
+              <li>
+                <b>External acoustic meatus:</b> auriculotemporal, vagus, and
+                facial nerve
+              </li>
+              <li>
+                <b>External surface of tympanic membrane:</b> mainly
+                auriculotemporal nerve, some vagus and facial nerves
+              </li>
+              <li>
+                <b>Internal Surface of tympanic membrane:</b> glossopharyngeal
+                nerve
+              </li>
+            </ul>
+          </td>
+          <td>
+            <b>Drains into:</b>
+            <li>Superficial parotid lymph nodes</li>
+            <li>Mastoid lymph nodes</li>
+            <li>Deep cervical lymph nodes</li>
+            <li>Superficial cervical lymph nodes</li>
+          </td>
+        </tbody>
+      </table>
+      <div
+        style="
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          --tooltip-img-width: 800px;
+        "
+      >
+        <span class="tooltip" data-position="below">
+          Middle Ear Borders
+          <img src="./ear/meb.png" alt="Middle Ear Borders" />
+        </span>
+        <br /><br />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Border</th>
+            <th>Structure</th>
+            <th>Location/Function</th>
+            <th>Key Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Roof</td>
+            <td>Tegmental wall</td>
+            <td>Separates middle ear and middle cranial fossa</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Floor</td>
+            <td>Jugular Wall</td>
+            <td>Separates middle ear and internal jugular vein</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Lateral Wall</td>
+            <td>Membranous wall</td>
+            <td>
+              Made of tympanic membrane and lateral bony wall of epitympanic
+              recess
+            </td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Medial Wall</td>
+            <td>Labyrinthine wall</td>
+            <td>Separates middle ear from inner ear</td>
+            <td>
+              <li>Promontory</li>
+              <li>Oval window</li>
+              <li>Round window</li>
+            </td>
+          </tr>
+          <tr>
+            <td>Posterior Wall</td>
+            <td>Mastoid Wall</td>
+            <td>
+              Contains pyramidal eminence and aditus to mastoid antrum (connects
+              to mastoid air cells)
+            </td>
+            <td>-</td>
+          </tr>
+          <td>Anterior Wall</td>
+          <td>Carotid Wall</td>
+          <td>Separates middle ear from carotid canal</td>
+          <td>
+            <li>Canal of tensor tympani muscle (superior)</li>
+            <li>Opening of pharyngotympanic (auditory tube)</li>
+          </td>
+        </tbody>
+      </table>
+
+      <div
+        style="
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          --tooltip-img-width: 500px;
+        "
+      >
+        <span class="tooltip" data-position="below">
+          Auditory Ossicles (Middle Ear Bones)
+          <img src="./ear/auditory_ossicles.png" alt="Auditory Ossicles" />
+        </span>
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Ossicle</th>
+            <th>Shape Reference</th>
+            <th>Location and Connections</th>
+            <th>Function</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Malleus</td>
+            <td>Hammer</td>
+            <td>Attached to tympanic membrane and incus</td>
+            <td>Transfers vibration from tympanic membrane to incus</td>
+          </tr>
+          <tr>
+            <td>Incus</td>
+            <td>Anvil</td>
+            <td>Between malleus and stapes</td>
+            <td>Transfers vibrations from malleus to stapes</td>
+          </tr>
+          <tr>
+            <td>Stapes</td>
+            <td>Stirrup</td>
+            <td>
+              <li>Innermost Ossicle</li>
+              <li>Base attaches to inner ear</li>
+            </td>
+            <td>Transfers vibrations to inner ear via oval window</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Muscles of the Middle Ear
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Muscle</th>
+            <th>Origin</th>
+            <th>Insertion</th>
+            <th>Innervation</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="tooltip"
+                >Tensor Tympani
+                <img src="./ear/tensor_tympani.png" alt="Tensor Tympani" />
+              </span>
+            </td>
+            <td>Pharyngotympanic tube</td>
+            <td>Malleus</td>
+            <td>Mandibular nerve (CN V<sub>3</sub>)</td>
+            <td>
+              <li>Pulls Malleus</li>
+              <li>Tenses tympanic membrane</li>
+              <li>Reduces vibration amplitude</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tooltip"
+                >Stapedius
+                <img src="./ear/stapedius.png" alt="Stapedius" />
+              </span>
+            </td>
+            <td>Pyramidal eminence on posterior wall</td>
+            <td>Tendon inserts on stapes</td>
+            <td>Facial Nerve</td>
+            <td>
+              <li>Pulls stapes posteriorly</li>
+              <li>Reduces vibration amplitude transmitted to oval window</li>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Nerves of the Middle Ear
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nerve</th>
+            <th>Origin & Pathway</th>
+            <th>Function/Innervation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="tooltip">
+                Tympanic nerve
+                <img src="./ear/tympanic_nerve.png" alt="Tympanic nerve" />
+              </span>
+            </td>
+            <td>
+              Branch of glossopharyngeal nerve (CN IX); contributes to tympanic
+              plexus on promontory
+            </td>
+            <td>
+              Innervates mucous membrane of middle ear and pharyngotympanic tube
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Lesser petrosal nerve
+                <img
+                  src="./ear/lesser_petrosal_nerve.png"
+                  alt="Lesser petrosal nerve"
+                />
+              </span>
+            </td>
+            <td>Branch of tympanic plexus exiting middle ear</td>
+            <td>Provides parasympathetic innervation to parotid gland</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Chorda tympani nerve
+                <img
+                  src="./ear/chorda_tympani_nerve.png"
+                  alt="Chorda tympani nerve"
+                />
+              </span>
+            </td>
+            <td>
+              Branch of facial nerve (CN VII); enters middle ear via posterior
+              wall, passes between malleus and incus, exits anterior wall
+            </td>
+            <td>
+              Travels to infratemporal fossa; carries taste fibers and
+              parasympathetic fibers
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Inner Ear
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Location/Structure</th>
+            <th>Fluid</th>
+            <th>Function</th>
+            <th>Innervation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="tooltip">
+                Bony labyrinth
+                <img src="./ear/bony_labyrinth.png" alt="Bony labyrinth" />
+              </span>
+            </td>
+            <td>Otic capsule</td>
+            <td>Perilymph</td>
+            <td>Houses membranous labyrinth</td>
+            <td>N/A</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Vestibule
+                <img src="./ear/vestibule.png" alt="Vestibule" />
+              </span>
+            </td>
+            <td>Part of bony labyrinth</td>
+            <td>Perilymph</td>
+            <td>Contains utricle &amp; saccule</td>
+            <td>Vestibular branch of CN VIII</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Semicircular canals
+                <img
+                  src="./ear/semicircular_canals.png"
+                  alt="Semicircular canals"
+                />
+              </span>
+            </td>
+            <td>Part of bony labyrinth</td>
+            <td>Perilymph</td>
+            <td>Detect rotational head movement</td>
+            <td>Vestibular branch of CN VIII</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Cochlea
+                <img src="./ear/cochlea.png" alt="Cochlea" />
+              </span>
+            </td>
+            <td>Spiral bony tube</td>
+            <td>Perilymph</td>
+            <td>Hearing</td>
+            <td>Cochlear branch of CN VIII</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Membranous labyrinth
+                <img
+                  src="./ear/membranous_labyrinth.png"
+                  alt="Membranous labyrinth"
+                />
+              </span>
+            </td>
+            <td>Suspended in bony labyrinth</td>
+            <td>Endolymph</td>
+            <td>Contains sensory organs</td>
+            <td>N/A</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Utricle &amp; Saccule
+                <img
+                  src="./ear/utricle_saccule.png"
+                  alt="Utricle and Saccule"
+                />
+              </span>
+            </td>
+            <td>Within vestibule</td>
+            <td>Endolymph</td>
+            <td>Detect linear acceleration</td>
+            <td>Vestibular branch of CN VIII</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Semicircular ducts
+                <img
+                  src="./ear/semicircular_ducts.png"
+                  alt="Semicircular ducts"
+                />
+              </span>
+            </td>
+            <td>Within semicircular canals</td>
+            <td>Endolymph</td>
+            <td>Detect rotational movement</td>
+            <td>Vestibular branch of CN VIII</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Cochlear duct
+                <img src="./ear/cochlear_duct.png" alt="Cochlear duct" />
+              </span>
+            </td>
+            <td>Within cochlea</td>
+            <td>Endolymph</td>
+            <td>Contains organ of Corti</td>
+            <td>Cochlear branch of CN VIII</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span class="tooltip">
+                Organ of Corti
+                <img src="./ear/organ_of_corti.png" alt="Organ of Corti" />
+              </span>
+            </td>
+            <td>On basilar membrane in cochlear duct</td>
+            <td>Endolymph</td>
+            <td>Converts vibrations to nerve signals</td>
+            <td>Cochlear branch of CN VIII</td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+
+    <br />
+
+    <details>
+      <summary>Lecture 5: Oral cavity</summary>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Muscles of the Oral Cavity
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Muscle</th>
+            <th>Origin</th>
+            <th>Insertion</th>
+            <th>Innervation</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span class="tooltip"
+                >Tensor Veli Palatini
+                <img src="./oral/tvp.png" alt="Tensor Veli Palatini" />
+              </span>
+            </td>
+            <td>Scaphoid fossa of sphenoid bone</td>
+            <td>Palatine Aponeurosis</td>
+            <td>CN V<sub>3</sub> (Mandibular Nerve)</td>
+            <td>
+              Tenses soft palate when we yawn or swallow; opens
+              pharyngotympanic/auditory tube
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tooltip"
+                >Levator Veli Palatini
+                <img src="./oral/lvp.png" alt="Levator Veli Palatini" />
+              </span>
+            </td>
+            <td>
+              <li>Petrous part of temporal bone</li>
+              <li>Cartilage of auditory tube</li>
+            </td>
+            <td>Palatine Aponeurosis</td>
+            <td>Pharyngeal Plexus of Vagus</td>
+            <td>Elevates soft palate when we swallow or yawn</td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tooltip"
+                >Palatoglossus
+                <img src="./oral/palatoglossus.png" alt="Palatoglossus" />
+              </span>
+            </td>
+            <td>Palatine Aponeurosis</td>
+            <td>Side of the tongue</td>
+            <td>Pharyngeal plexus of vagus nerve</td>
+            <td>
+              <li>Depresses palate</li>
+              <li>Elevates Tongue</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tooltip"
+                >Palatopharyngeus
+                <img src="./oral/palatopharyngeus.png" alt="Palatopharyngeus" />
+              </span>
+            </td>
+            <td>
+              <li>Hard Palate</li>
+              <li>Palatine Aponeurosis</li>
+            </td>
+            <td>Wall of pharynx</td>
+            <td>Pharyngeal plexus</td>
+            <td>
+              <li>Tenses soft palate</li>
+              <li>Elevate Pharynx</li>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="tooltip"
+                >Muscle of Uvula
+                <img src="./oral/uvula.png" alt="Muscle of Uvula" />
+              </span>
+            </td>
+            <td>
+              <li>Posterior nasal spine</li>
+              <li>Palatine Aponeurosis</li>
+            </td>
+            <td>Mucosa of Uvula</td>
+            <td>Pharyngeal Plexus</td>
+            <td>Shortens Uvula</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Arterial Supply of Palate
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Bone</th>
+            <th>Artery</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hard Palate</td>
+            <td>Greater palatine artery</td>
+          </tr>
+          <tr>
+            <td>Soft Palate</td>
+            <td>
+              <li>Less palatine artery</li>
+              <li>Ascending palatine artery</li>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="blur-section">
+        <b>Maxillary Artery</b>
+        <span class="blur-target">
+          Maxillary artery → descending palatine artery → greater and lesser
+          palatine</span
+        >
+        <br />
+        <b>Greater palatine artery: enters</b>
+        <span class="blur-target">
+          Oral cavity via greater palatine foramen; Supplies hard palate; Passes
+          through incisive canal to nasal cavity
+        </span>
+        <br />
+        <b>Lesser palatine artery: enters</b>
+        <span class="blur-target">
+          oral cavity via lesser palatine foramen; supplies soft palate
+        </span>
+      </div>
+      <br />
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Arterial Supply of Tonsils
+        <br /><br />
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Ignore this Column</th>
+            <th>Artery</th>
+            <th>Origin</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>-</td>
+            <td>Tonsillar</td>
+            <td>Facial artery</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Ascending Palatine</td>
+            <td>Facial artery</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Descending Palatine</td>
+            <td>Maxillary artery</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Lingual</td>
+            <td>External carotid artery</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Ascending Pharyngeal</td>
+            <td>External carotid artery</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="text-align: center; font-size: 24px; font-weight: bold">
+        Innervation of the Palate
+        <br /><br />
+      </div>
+      <div class="blur-section">
+        <b>Palate is innervated by: </b>
+        <span class="blur-target"> Maxillary Nerve (CN V<sub>2</sub>) </span>
+        <br />
+      </div>
+      <div class="blur-section">
+        <b>Greater Palatine Nerve: </b>
+        <span class="blur-target"> Innervates most of hard palate </span>
+        <br />
+      </div>
+      <div class="blur-section">
+        <b>Lesser Palatine Nerve: </b>
+        <span class="blur-target"> Innervates soft palate </span>
+      </div>
+      <div class="blur-section">
+        <b>Both Greater and Lesser arise from:</b>
+        <span class="blur-target">
+          Sphenopalatine ganglion in pterygopalatine fossa; travel through
+          sphenopalatine canal and respective foramina
+        </span>
+      </div>
+      <div class="blur-section">
+        <b>Nasopalatine Nerve: </b>
+        <span class="blur-target">
+          Enters nasal cavity via sphenopalatine foramen; innervates nasal
+          septum; enters oral cavity via incisive canal; innervates anterior
+          hard palate
+        </span>
+      </div>
     </details>
 
     <style>
