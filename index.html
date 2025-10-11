@@ -38,13 +38,13 @@
         position: absolute;
         width: var(--tooltip-img-width, 300px);
         height: auto;
-        border: 1px solid #ccc;
-        background: #fff;
+        border: 2px solid #f00;
+        background: #ffffcc;
         padding: 5px;
         z-index: 10;
         bottom: 100%;
-        left: 100%;
-        transform: translateX(-50%);
+        left: 50%;
+        transform: translateX(10px);
         max-width: 90vw; /* ✅ prevents image from exceeding viewport width */
         max-height: 80vh; /* ✅ keeps image inside visible page vertically */
         object-fit: contain;
@@ -2678,7 +2678,10 @@
       </table>
       <div><b>Mnemonic</b>: "Introverted: Some Idiots Try Verifying"</div>
       <div style="text-align: center; font-size: 24px; font-weight: bold">
-        Tongue innervation
+        <span class="tooltip"
+          >Tongue innervation
+          <img src="./tongue/nerve.png" alt="Tongue innervation"
+        /></span>
         <br /><br />
       </div>
       <table>
